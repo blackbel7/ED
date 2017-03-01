@@ -30,9 +30,9 @@
                          <form>
                             <div class="form-group">
                                 <input type="text" name="pseudo" placeholder="Pseudo" id="psd" class="form-control"/>
-                                <label for="psd">Votre pseudo</label>
+                                <label for="psd">FIANTSOANA</label>
                                 <input type="password" name="password" placeholder="Mot de passe" id="pass" class="form-control"/>
-                                <label for="pssword">Votre mot de passe</label>
+                                <label for="pssword">TENY MIAFINA</label>
                                 <input type="submit" value="connexion" class="form-control"/>
                             </div> 
                         </form>
