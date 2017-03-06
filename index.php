@@ -1,45 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>ESSAI VIDEO</title>
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+<?php 
+function comp ($v1,$v2){
+	if(is_numeric($v1) & is_numeric($v2) ){
+		$v1>$v2;
+		echo $v1,' est superieur a ',$v2;
+	}
+	else{
+		echo $v1,' est inferieur a ',$v2;
+	}
+}
+function add($v1,$v2){
+	if(is_numeric($v1) & is_numeric($v2) ){
 
-</head>
-<body>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-3 case1 text-center">
-                    <i class="fa fa-home fa-4x">  Home</i>
-                </div>
-                <div class="col-md-3 case2">
-                    <i class="fa fa-video-camera fa-4x"> Video</i>
-                </div>
-                <div class="col-md-3 case3">
-                    <i class="fa fa-music fa-4x"> Music</i>
-                </div>
-                <div class="col-md-3 case4">
-                    <i class="fa fa-envelope fa-4x"> Message</i>
-                </div>
+	$v4=$v1+$v2;
+		echo $v4,' est le resultat ';
+	}
+	else{
+		echo $v1,' ',$v2 ;
+	}
+	
+}
+function soustr ($v1,$v2){
+	if(is_numeric($v1) & is_numeric($v2) ){
+	$v4=$v1-$v2;
+		echo $v4, ' est le resultat ';
+	}
+	else{
+		echo $v1,' ',$v2 ;
+	}
+}
 
-            </div>
-                <div class="row">
-                    <div class="col-sm-3 log">
-                         <form>
-                            <div class="form-group">
-                                <input type="text" name="pseudo" placeholder="Pseudo" id="psd" class="form-control"/>
-                                <label for="psd">FIANTSOANA</label>
-                                <input type="password" name="password" placeholder="Mot de passe" id="pass" class="form-control"/>
-                                <label for="pssword">TENY MIAFINA</label>
-                                <input type="submit" value="connexion" class="form-control"/>
-                            </div> 
-                        </form>
-                    </div>
-                </div>
-<script src="./assets/js/jquery.min.js"></script>
-<script src="./assets/js/bootstrap.min.js"></script>
-</body>
+	$v1=2;
+	$v2=5;
+	$v3=null;
+	$v4=null;
+	$b='<br>';
 
-</html>
+		echo $v1,' est v1 ';
+			echo $b;
+		echo $v2,' est v2 ';
+			echo $b;
+				comp ($v1,$v2);
+			echo $b;
+				add ($v1,$v2);
+			echo $b;
+				soustr ($v1,$v2);
+			echo $b;
+				$v3=$v1;
+				$v1=$v2;
+				$v2=$v3;
+			echo $b;
+				echo $v1,' est v1 ';
+			echo $b;
+				echo $v2,' est v2 ';
+			echo $b;
+				comp ($v1,$v2);
+			echo $b;
+ 
+				echo strlen('Eddy');
+				echo (" Eddy");
+?>
