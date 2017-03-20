@@ -10,9 +10,9 @@
 
 	<div class="container">
 		<div class="row">
-		<?php
+		?php
 		<div class="col-md-3 case1 container-fluid">
-		?>
+                ?
 				
 			</div>
 		</div>
